@@ -2,10 +2,11 @@
 
 import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
+import { Suspense } from 'react'
 import { ResultsComparison } from '@/components/ResultsComparison'
 import sensorsData from '@/data/sensors.json'
 
-export default function GameResultsPage() {
+function GameResultsContent() {
   const searchParams = useSearchParams()
   
   const predictions = searchParams.get('predictions')?.split(',') || []
@@ -160,5 +161,13 @@ export default function GameResultsPage() {
         </div>
       </main>
     </div>
+  )
+}
+
+export default function GameResultsPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background text-foreground flex items-center justify-center">Loading...</div>}>
+      <GameResultsContent />
+    </Suspense>
   )
 }

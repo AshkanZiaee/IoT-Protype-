@@ -23,7 +23,7 @@ export function PinballAnimation({ isLaunching, predictions }: PinballAnimationP
         Math.floor(Math.random() * gameSimulation.gameResults.length)
       ]
       
-      const animationSteps = []
+      const animationSteps: Array<{ x: number; y: number; delay: number; hitSensor?: string }> = []
       
       animationSteps.push({ x: 90, y: 85, delay: 0 })
       
@@ -65,7 +65,7 @@ export function PinballAnimation({ isLaunching, predictions }: PinballAnimationP
         setTimeout(() => {
           setBallPosition({ x: step.x, y: step.y })
           if (step.hitSensor) {
-            setHitSensors(prev => [...prev, step.hitSensor])
+            setHitSensors(prev => [...prev, step.hitSensor!])
           }
         }, step.delay)
       })

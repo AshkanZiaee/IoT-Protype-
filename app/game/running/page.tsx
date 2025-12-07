@@ -1,11 +1,11 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, Suspense } from 'react'
 import { useSearchParams, useRouter } from 'next/navigation'
 import { PinballAnimation } from '@/components/PinballAnimation'
 import gameSimulation from '@/data/gameSimulation.json'
 
-export default function GameRunningPage() {
+function GameRunningContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
   const [isLaunching, setIsLaunching] = useState(true)
@@ -124,5 +124,13 @@ export default function GameRunningPage() {
         )}
       </main>
     </div>
+  )
+}
+
+export default function GameRunningPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-background text-foreground flex items-center justify-center">Loading...</div>}>
+      <GameRunningContent />
+    </Suspense>
   )
 }
