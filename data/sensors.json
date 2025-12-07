@@ -1,0 +1,25 @@
+{
+  "sensors": [
+    {
+      "id": "sensor1",
+      "name": "Touch Sensor 1",
+      "position": { "x": 450, "y": 220 },
+      "color": "#00ffff",
+      "points": 10
+    },
+    {
+      "id": "sensor2", 
+      "name": "Touch Sensor 2",
+      "position": { "x": 300, "y": 180 },
+      "color": "#8a2be2",
+      "points": 15
+    },
+    {
+      "id": "sensor3",
+      "name": "Touch Sensor 3", 
+      "position": { "x": 150, "y": 200 },
+      "color": "#ff1493",
+      "points": 20
+    }
+  ]
+}

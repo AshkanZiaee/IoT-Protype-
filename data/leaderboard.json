@@ -1,0 +1,68 @@
+{
+  "leaderboard": [
+    {
+      "id": "1",
+      "playerName": "PinballMaster",
+      "score": 2450,
+      "gamesPlayed": 12,
+      "perfectRounds": 8,
+      "lastPlayed": "2024-12-07T10:30:00Z"
+    },
+    {
+      "id": "2", 
+      "playerName": "SensorSage",
+      "score": 2180,
+      "gamesPlayed": 15,
+      "perfectRounds": 6,
+      "lastPlayed": "2024-12-07T09:45:00Z"
+    },
+    {
+      "id": "3",
+      "playerName": "BallWhisperer", 
+      "score": 1920,
+      "gamesPlayed": 8,
+      "perfectRounds": 5,
+      "lastPlayed": "2024-12-07T08:15:00Z"
+    },
+    {
+      "id": "4",
+      "playerName": "FlipperFan",
+      "score": 1750,
+      "gamesPlayed": 20,
+      "perfectRounds": 4,
+      "lastPlayed": "2024-12-06T22:30:00Z"
+    },
+    {
+      "id": "5",
+      "playerName": "ArcadeAce",
+      "score": 1650,
+      "gamesPlayed": 6,
+      "perfectRounds": 3,
+      "lastPlayed": "2024-12-06T19:20:00Z"
+    },
+    {
+      "id": "6",
+      "playerName": "SilverBall",
+      "score": 1480,
+      "gamesPlayed": 11,
+      "perfectRounds": 2,
+      "lastPlayed": "2024-12-06T16:45:00Z"
+    },
+    {
+      "id": "7",
+      "playerName": "TiltMaster",
+      "score": 1320,
+      "gamesPlayed": 9,
+      "perfectRounds": 2,
+      "lastPlayed": "2024-12-06T14:10:00Z"
+    },
+    {
+      "id": "8",
+      "playerName": "BumperKing",
+      "score": 1180,
+      "gamesPlayed": 7,
+      "perfectRounds": 1,
+      "lastPlayed": "2024-12-06T11:30:00Z"
+    }
+  ]
+}
